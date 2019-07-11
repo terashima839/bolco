@@ -1,0 +1,255 @@
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* タグ共通 */
+main{
+  /* margin: auto; */
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+h2{
+  margin: 0;
+  /* color:#495397; */
+  background: #6BCCFF;
+
+}
+p{
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color:#2c2c2f;
+  background: #6BCCFF;
+
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  
+}
+
+/* タグ共通 */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* mypage.php */
+.prof{
+  padding:10px;
+}
+.edit{
+  position: relative;
+  left:450px;
+}
+
+.board_icon{
+  width: 30%;
+  padding: 10px;
+  display: inline-block; 
+  color: #2c2c2f;
+}
+
+/* mypage.php */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* クラス共通 */
+.title{
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.error{
+  color:red;
+}
+
+.name{
+  font-weight: bold;
+}
+
+/* クラス共通 */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* header.html */
+header, footer{
+  padding: 10px;
+  color: #f9f9f9;
+  background: #26A7FF;
+}
+
+header{
+  height:100px;
+  box-sizing: border-box; /* padding等のサイズを含むサイズにする */
+}
+
+footer{
+  text-align: center;
+}
+/*  */
+.head{
+  display:block;
+  width:1100px;
+  margin:auto;
+}
+
+.head-top{
+  font-size:13px;
+  height: 25px;
+  border-bottom: 1px dotted;
+}
+
+.top-wrap1{float: left;}
+.top-wrap2{float: right;}
+
+.top-menu{
+  float: left;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.top2{
+  border-right: 1px solid;
+}
+/*  */
+.head-left{
+  font-size:40px;
+  margin: 0;
+  padding-right: 20px;
+  float: left;
+}
+.head-left .a{
+  color:white;
+}
+
+
+.head-right{
+  margin: 0;
+  margin-top:15px;
+}
+
+/* header.html */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* index.phpトップ画面 */
+#photo {
+  width: 95%;
+  height: 700px;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#photo img { /* 画像の位置を指定 */
+  top: 0;
+  left: 0;
+  position: absolute; 
+}
+
+.example { /*親div*/
+  position: relative; /*相対配置*/
+  }
+
+.example .v1,.example .v2, .example .v3 {
+  position: absolute; /*絶対配置*/
+  color: #5c5c5c;
+  font-size:50px;
+  font-weight:bold; 
+  top: 0;
+  left: 650px;
+}
+.example .v1 {
+  top:200px;
+}
+.example .v2{
+  top:300px;
+}
+.example .v3 {
+  top:400px;
+}
+
+.example .circle {
+  position: absolute; /*絶対配置*/
+  background:#ececeb;
+  opacity:0.4;
+  width:430px;
+  height:320px;
+  display: block;
+  left: 640px;
+  top: 180px;
+  border-radius: 50px;
+}
+
+
+/* index.phpトップ画面 */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* index.php main */
+
+.section1{
+  font-size: 20px;
+  height:170px;
+}
+.section2{
+  margin:50px;
+}
+/*  */
+.section2 .pic{
+  margin: 0 10px 0 50px;
+  vertical-align: middle;
+}
+
+.section2 .column{
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle;
+}
+/*  */
+.section3, .section4{
+  border-top: 2px dotted;
+}
+
+/*  */
+.new{
+  width: 30%;
+  height:345px;
+  padding: 10px;
+  margin: 5px; /* 投稿の間隔 */
+  vertical-align: top; /*上端を揃える*/
+  display: inline-block; 
+  color: #2c2c2f;
+  background: #ececeb;/*背景色*/
+  border: solid #ececeb 0.5px; /* 枠線 */
+}
+
+.new .pic{
+  height:250px;
+  max-width:95%;
+  display: block;
+  margin: auto;
+}
+/*  */
+.more{
+  text-align: right;
+  padding: 20px;
+}
+
+/* index.php main */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */
+/* board_detail.php */
+.detail{
+  max-width:95%;
+}
+
+.board{
+  width: 60%;
+  margin: auto;
+  margin-top:2px;
+  padding:10px;
+  background: #ececeb;
+
+}
+
+.user_comment{
+  width: 60%;
+  margin: auto;
+  margin-top:10px;
+  padding: 10px;
+  background: #ececeb;/*背景色*/
+
+}
+/* board_detail.php */
+/* ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ */

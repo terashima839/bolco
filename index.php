@@ -1,5 +1,5 @@
 <!-- *
-アクセスURL:http://localhost/terashima/main/index.php
+アクセスURL:http://localhost/terashima2/index.php
 * -->
 
 <?php
@@ -23,7 +23,7 @@
 <head>
   <meta charset="utf-8">
   <title>BolCo</title>
-  <link rel="stylesheet" type="text/css" href="../style.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
@@ -44,7 +44,7 @@
 
 </head>
 <body>
-  <?php require_once('../main/header.html'); ?>
+  <?php require_once('./header.html'); ?>
 <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
   <main>
     <div class="example">
@@ -65,19 +65,19 @@
     </div>
 <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
     <div class="section2">
-      <img src="../main/image/sports.jpeg" width="8%" height="8%" alt="" class="pic">
+      <img src="./image/sports.jpeg" width="8%" height="8%" alt="" class="pic">
       <div class="column">
          登る！！<br>
          今日もあの壁に挑戦<br>
       </div>
 <!--  -->
-      <img src="../main/image/camera.jpeg" width="8%" height="8%" alt="" class="pic">
+      <img src="./image/camera.jpeg" width="8%" height="8%" alt="" class="pic">
       <div class="column">
         撮る！！<br>
         挑戦した壁を写真に残そう<br>
       </div>
 <!--  -->
-      <img src="../main/image/memo.jpeg" width="8%" height="8%" alt="" class="pic">
+      <img src="./image/memo.jpeg" width="8%" height="8%" alt="" class="pic">
       <div class="column">
         メモ！！<br>
         成果を記録して日記完成<br>
@@ -95,9 +95,9 @@
           }
           echo '<form method="get" action="" class="new">';
 
-            echo '<a href="../board/board_detail.php?board_id=' . $row['board_id'] . '">'; // board_idのURL
+            echo '<a href="./board_detail.php?board_id=' . $row['board_id'] . '">'; // board_idのURL
               echo '<input type="hidden" name="board_id" value="'. $row['board_id'].'">'; // board_idを飛ばすための処理
-              echo '<img src=../board/upfile/' . $row['path'] . ' class="pic">';
+              echo '<img src=./upfile/' . $row['path'] . ' class="pic">';
               echo '<div class="name">' . $row['user_name'] . '　' . substr($row['date'],2,14) . '</div>';
               echo '<div class="gym">' . $row['gym'] . '</div>';
 
@@ -116,7 +116,7 @@
       ?>
     <!-- </div> -->
 <!--  -->
-        <div class="more"><a href="../board/board_seach.php">もっと見る</a></div>
+        <div class="more"><a href="./board_seach.php">もっと見る</a></div>
       <!-- </div> -->
     </div>
 <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
@@ -125,15 +125,15 @@
 <!--  -->
       <div class="post">
         <div class="new">
-          <img src="../main/image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
+          <img src="./image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
           <div class="user_name">B-pump</div>
         </div>
         <div class="new">
-          <img src="../main/image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
+          <img src="./image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
           <div class="user_name">B-pump</div>
         </div>
         <div class="new">
-          <img src="../main/image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
+          <img src="./image/gym.jpeg" width="100%" height="100%" alt="" class="pic">
           <div class="user_name">B-pump</div>
         </div>
 
@@ -143,6 +143,6 @@
     </div>
   </main>
   <!-- ＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊ -->
-  <?php require_once('../main/footer.html'); ?>
+  <?php require_once('./footer.html'); ?>
 </body>
 </html>
